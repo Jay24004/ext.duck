@@ -33,6 +33,6 @@ class MyWSCog(webserver.WebserverCog, port=8080):
         return web.json_response({'id': user.id, 'name': user.name})
 
 # then, somewhere:
-async def setup(bot: commands.Bot)
+async def setup(bot: commands.Bot):
     await bot.add_cog(MyWSCog(bot))
 ```
